@@ -1,0 +1,20 @@
+<div class="d-flex justify-content-center m4">
+  <h4>List of words!</h4>
+</div>
+
+<button
+  type="button"
+  name="button"
+  (click)="justCheck()"
+  class="btn btn-primary btn-block my-3 ml-1"
+>
+  Show Words
+</button>
+
+<ng-template [ngIf]="loggedIn">
+  <ul class="list-group">
+    <li *ngFor="let info of infoReceived" class="list-group-item">
+      {{ info }}
+    </li>
+  </ul>
+</ng-template>
