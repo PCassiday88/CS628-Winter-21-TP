@@ -15,16 +15,6 @@ export class RecordService {
       return this.httpClient.get<Words[]>('http://localhost:3000/db')
 
     }
-
-
-  info: string[]= ['Adam', 'Shandi', 'Rop']
-
-
-  getinfo():string[]{
-    return this.info
-  }
-
-
 }
 
 

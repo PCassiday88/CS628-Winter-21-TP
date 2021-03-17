@@ -9,22 +9,49 @@ import { Words} from '../model.words'
 })
 export class QuizComponent implements OnInit {
   loggedIn:boolean=false
+  maxRequest:number=5
+  counter:number=0
 
-  infoReceived: string[]
+  infoReceived: string[]=[
+    "ability",
+    "able",
+    "about",
+    "above",
+    "accept",
+    "according",
+    "account",
+    "across",
+    "act",
+    "action",
+    "activity",
+    "actually",
+    "add",
+    "address",
+    "administration",
+    "admit",
+    "adult",
+    "affect",
+    "after",
+    "again",
+    "against",
+    "age",
+    "agency"
+    ]
 
-  constructor(private rservice: RecordService) {
-    questionsInfo:Words[]
-  }
+  constructor(private rservice: RecordService) {}
 
-  getInfoFromServiceClass(){
-    this.loggedIn=!this.loggedIn
-    this.infoReceived = this.rservice.getinfo()
-  }
+  questionsInfo:Words[]
+
 
   ngOnInit(): void {
+    console.log('this is got called')
     this.rservice.loadQuestionDetails().subscribe(data => this.questionsInfo=data,
       error => console.log('ther was en error'))
-      console.log('this called in python')
+      console.log(this.questionsInfo)
   }
 
+  justCheck():void{
+    this.loggedIn=!this.loggedIn
+
+  }
 }
