@@ -23,3 +23,14 @@ As a user, I can modify details of a book.
 As a user, I can delete a book.  
 Create a Team Project Report in Word document.  
 Create a Team Project Presentation in  PowerPoint .
+
+INSTALLATION AND RUN INSTRUCTIONS
+1. Clone the repo
+2. Navigate to the root directory (you will see subdirectories for frontend and backend)
+3. Open IDE (use 'code .' without qoutes if using VS Code)
+4. cd frontend
+5. cd MemoryFit
+6. In the terminal (make sure your terminal shows that you are in the MemoryFit directory)
+7. npm install
+8. ng serve -o (After compilation, the web application will appear in the browser)
+9. Follow directions on screen for using the application
