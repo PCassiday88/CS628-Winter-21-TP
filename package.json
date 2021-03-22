@@ -1,7 +1,7 @@
 {
   "name": "cs628-winter-21-tp",
   "version": "1.0.0",
-  "description": "A MERN stack app",
+  "description": "A MEAN stack app",
   "main": "server.js",
   "type": "module",
   "scripts": {
