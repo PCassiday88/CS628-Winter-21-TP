@@ -13,30 +13,27 @@ export class QuizComponent implements OnInit {
   counter:number=0
 
   infoReceived: string[]=[
-    "ability",
-    "able",
-    "about",
-    "above",
-    "accept",
-    "according",
-    "account",
-    "across",
-    "act",
-    "action",
-    "activity",
-    "actually",
-    "add",
-    "address",
-    "administration",
-    "admit",
-    "adult",
-    "affect",
-    "after",
-    "again",
-    "against",
-    "age",
-    "agency"
-    ]
+    "sun",
+    "shoes",
+    "traffic-light",
+    "table",
+    "glove",
+    "soda",
+    "rainbow",
+    "octopus",
+    "cat",
+    "toes",
+    "skis",
+    "roses",
+    "spaceship",
+    "carrot",
+    "tennis",
+    "candles",
+    "magazine",
+    "voting-booth",
+    "golf",
+    "glasses"
+  ]
 
   constructor(private rservice: RecordService) {}
 
